@@ -1,0 +1,25 @@
+{
+    "name": "tdm/msgscheduler",
+    "description": "3DM Message Scheduler dispatcher",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "9.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tdm\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": { "Tdm\\Tests\\": "tests/" }
+      },
+    "authors": [
+        {
+            "name": "Carlos Arce",
+            "email": "apolinux@gmail.com"
+        }
+    ],
+    "bin":[
+        "bin/dispatcher.php"
+    ]
+}

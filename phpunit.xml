@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<phpunit bootstrap="./vendor/autoload.php"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         stopOnFailure="false"
+         colors="true">
+  <php>
+    <var name="DB_USER" value="testuser" />
+    <var name="DB_PASSWD" value="poerasldfjalsdjflk12358239" />
+    <var name="DB_DSN" value="mysql:host=localhost;dbname=test"/>
+    
+  </php>         
+</phpunit>
