@@ -152,6 +152,13 @@ class MessageSchedulerTest extends MessageSchedulerTestCase{
     $this->assertEquals(2, $ps->ult_msg_id);
   }
 
+  public function testScheduleDailyStartDateTextOtherHourFail(){
+    $this->createSchedule(1, date('H:i:s',time()+60), 1, date('Y-m-d H:i:s'), 
+    null, $text='hola mundo');
+    $this->runScheduler();
+    $this->assertMessageQueued(0);
+  }
+
   protected function createMsgGeneral($service_id=1, $cat_id=1, $count=1){
     DB::query('DROP TABLE IF EXISTS mensajes_general');
 

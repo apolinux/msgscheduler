@@ -43,7 +43,9 @@ class MessageScheduler{
           OR
           ult_fecha_entrega IS NULL
       )
-    )');
+    )
+    AND DATE_FORMAT(CURRENT_TIMESTAMP,"%H:%i")=TIME_FORMAT(hora, "%H:%i")
+    ');
 
     // send each msg
 
