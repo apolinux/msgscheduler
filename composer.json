@@ -1,6 +1,6 @@
 {
-    "name": "tdm/msgscheduler",
-    "description": "3DM Message Scheduler dispatcher",
+    "name": "apolinux/msgscheduler",
+    "description": "Message Scheduler Dispatcher",
     "type": "library",
     "require-dev": {
         "phpunit/phpunit": "9.*"
